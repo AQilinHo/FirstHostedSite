@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- can use <style> tags in lieu of CSS, but not necessarily recommended -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h2>Cell spanning two or more columns</h2>
+<p>Uses colspan attribute (as with Wikipedia).</p>
+
+<table style="width:75%">
+  <tr>
+    <th>Name</th>
+    <th colspan="3">Email</th>
+  </tr>
+  <tr>
+    <td>HY</td>
+    <td>HeYu1993@gmail.com</td>
+    <td>kshu@alumni.cmu.edu</td>
+    <td>REDACTED@REDACTED</td>
+  </tr>
+</table>
+
+<h2>Combining A) row-span, B) col-span C) empty cells; D) background colours</h2>
+
+<table style="width:100%">
+<tr>
+    <td></td>
+    <th>DEM seats</th>
+    <th>GOP seats</th>
+</tr>
+<tr>
+    <th rowspan="2">Senate seats picked up:</th>
+    <td colspan="2" bgcolor="#B0CEFF">6 GOP --> DEM (DE, FL, MI, MN, MO, WA)</td>
+</tr>
+<tr>
+    <td colspan="2" bgcolor="#FFB6B6">2 DEM --> GOP (NV, VA)</td>
+</tr>
+<tr>
+    <th>Total Senate seats after election:</th>
+    <td>50</td>
+    <td>50</td>
+</tr>
+<tr>
+    <th>Senate majority?:</th>
+    <td><i>Until 20 Jan 2001</i><br>
+        <small>(Al Gore tie-breaking)</small></td>
+    <td>20 Jan 2001 until Jeffords' (I-VT) caucus switch<br>
+        <small>(Dick Cheney tie-breaking)</small></td>
+</tr>
+<tr>
+    <th>Senate party leader:</th>
+    <td>Tom Daschle (SD)</td>
+    <td>Trent Lott (MS)</td>
+</tr>
+</table>
+
+<h2>Table captions</h2>
+
+<table style="width:50%">
+  <caption>U.S. federal holidays / events (partial)</caption>
+  <tr>
+    <th>Month</th>
+    <th>List</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>Congress convenes (3 Jan on odd years)<br>
+        Martin Luther King, Jr. Day (3rd Monday)<br>
+        Inauguration Day (20 Jan in years satisfying 1 modulo 4)</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>Groundhog Day (2 Feb; <small>cultural</small>)<br>
+        Presidents' Day (3rd Monday)</td>
+  </tr>
+  <tr>
+    <td>April</td>
+    <td>Tax Day (15 Apr)<br>
+        Earth Day (22 Apr; <small>Cultural, only since 1970</small>)</td>
+  </tr>
+  <tr>
+    <td>May</td>
+    <td>Memorial Day (4th Monday)</td>
+  </tr>
+</table>
+
+</body>
+</html>
